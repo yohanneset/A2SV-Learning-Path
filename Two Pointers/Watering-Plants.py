@@ -8,19 +8,16 @@ def minimum_refill(plants, capacityA, capacityB):
         if tempA < plants[i]:
             tempA = capacityA
             count += 1
-            print(f"count + 1 {i} : {j}")
         tempA -= plants[i]
         i += 1
 
         if tempB < plants[j]:
             tempB = capacityB
             count += 1
-            print(f"count + 1 {i} : {j}")
         tempB -= plants[j]
         j -= 1
 
     if i == j and max(tempA, tempB) < plants[i]:
         count += 1
-        print(f"count + 1 {i} : {j}")
 
     return count
