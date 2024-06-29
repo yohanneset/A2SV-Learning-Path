@@ -16,9 +16,6 @@ def good_segment(arr, k, n):
     return count
 
 
-# n, k = map(int, input().split())
-# arr = list(map(int, input().split()))
-jhjhjhjh
-n, k = 7, 20
-arr = [2, 6, 4, 3, 6, 8, 9]
+n, k = map(int, input().split())
+arr = list(map(int, input().split()))
 print(good_segment(arr, k, n))
